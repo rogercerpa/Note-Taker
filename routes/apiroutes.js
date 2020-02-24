@@ -1,20 +1,16 @@
 const notesData = require('../db/notesData');
-const fs = require('fs');
 
-module.exports = function(app) {
-	app.get('api/notes', function(req, res) {
-		res.json(JSON.parse(notesData));
+function setAPIroutes(app) {
+	app.get('/api/notes', function(req, res) {
+		res.json(notesData);
 	});
 
-	app.post('api/notes', function(req, res) {
-		notesData.push(req.body);
+	app.post('/api/notes', function(req, res) {
+		const newNote = req.body;
+		notesData.push(newNote);
 		res.json(true);
-		fs.writeFile(JSON.stringify(notesData));
 	});
-};
+	// app.delete('api/notes', function(req, res) {});
+}
 
-// app.delete("api/notes/:id", function(req, res){
-// 	if (notesData.id ===){
-
-// 	}
-// })
+module.exports = setAPIroutes;
