@@ -2,9 +2,9 @@
 This Application will help you write/take notes and save them for later use.
 
 ## Demo pages 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/rogercerpa/TakeNotes-App/blob/master/public/assets/images/demo1.PNG)
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/rogercerpa/TakeNotes-App/blob/master/public/assets/images/demo2.PNG)
 
 ## Technologies:
 
